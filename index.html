@@ -22,16 +22,16 @@
           <h2 class="contact__tittle">CONTACT</h2>
           <nav class="contact__info">
             <ul class="contact__list">
-              <li class="contact__item">Telegram: <br>
+              <li class="contact__item">Telegram: 
                 <a class="contact__link" href="https://t.me/alexandernechaenkov">@alexandernechaenkov</a>
               </li>
-              <li class="contact__item">Email: <br>
+              <li class="contact__item">Email: 
                 <a class="contact__link" href="mailto:kettl110e4@gmail.com">kettl110e4@gmail.com</a>
               </li>
-              <li class="contact__item">GitHub: <br>
+              <li class="contact__item">GitHub: 
                 <a class="contact__link" href="https://github.com/kettl96">Alexander Nechaenkov (kettl96)</a>
               </li>
-              <li class="contact__item">Discord: <br> kettl96#0171
+              <li class="contact__item">Discord:  kettl96#0171
               </li>
               <li class="contact__item _geo-container"><img src="./2.svg" alt="geoIcon">
                 <div class="_geo">Belarus, Minsk</div>
@@ -95,7 +95,42 @@
             </ol>
             <div class="code__container">
               <details>
-                1. let inPalindrom = (string) => string === string.split('').reverse().join('')
+                <code>  
+                  <pre>
+
+function solution(numbers) { 
+  const checkIfSame = numbers.reduce((acc, item) => {
+    acc[item] = 1
+    return acc
+  }, {})
+  if (Object.keys(checkIfSame).length > 1) {
+    let largest = numbers[0]
+    let smallest = numbers[0]
+    numbers.forEach((item, index) => {
+      if (largest < item) {
+        largest = item
+      }
+      if (smallest > item) {
+        smallest = item
+      }
+    })
+    numbers.forEach((item, index) => {
+      if (item === largest) {
+        numbers.splice(index, 1, (largest - smallest))
+      }
+    })
+    return solution(numbers)
+  } else {
+    const check = numbers.reduce((acc, item) => {
+      acc += item
+      return acc 
+    }, 0)
+    return check
+  }
+}
+                  </pre>              
+                  
+                </code>
                 <summary>
                   click to see some code examples
                 </summary>
@@ -107,7 +142,23 @@
         </div>
       </main>
       <section class="section__container">
-        <h2 class="education__title _tittle">education</h2>
+        <h2 class="education__title _tittle">Education</h2>
+        <div class="education__container">
+          <ul>
+            <li class="education__item">Yanka Kupala State University of Grodno (Grodno, Belarus),</li>
+            <li class="education__item">2013-2018.</li>
+            <li class="education__item">Speciality - Practical Psychology.</li>
+          </ul>
+        </div>
+        <div class="languages__container">
+          <h3 class="languages__tittle">Languages</h3>
+          <ul class="languages__list">
+            <li class="languages__item">English - B1
+            </li>
+            <li class="languages__item">Russian - Native Speaker
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </div>
