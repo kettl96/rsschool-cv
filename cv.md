@@ -1,4 +1,4 @@
-# [rsschool-cv](https://github.com/kettl96/rsschool-cv/tree/main)
+# [rsschool-cv](https://kettl96.github.io/rsschool-cv/)
 ***
 ## ***Alexander Nechaenkov***
 ***
