@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlexNechaenkov</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrap">
+      <aside class="aside">
+        <div class="aside__container">
+          <div class="avatarimg">
+            <img src="./ava.jpg" alt="Alexander Nechaenkov">
+          </div>
+          <div class="contact__container">
+            <h2 class="contact__tittle">CONTACT</h2>
+            <nav class="contact__info">
+              <ul class="contact__list">
+                <li class="contact__item">Telegram:
+                  <a class="contact__link" href="https://t.me/alexandernechaenkov">@alexandernechaenkov</a>
+                </li>
+                <li class="contact__item">Email:
+                  <a class="contact__link" href="mailto:kettl110e4@gmail.com">kettl110e4@gmail.com</a>
+                </li>
+                <li class="contact__item">GitHub:
+                  <a class="contact__link" href="https://github.com/kettl96">Alexander Nechaenkov (kettl96)</a>
+                </li>
+                <li class="contact__item">Discord: kettl96#0171
+                </li>
+                <li class="contact__item _geo-container"><img src="./2.svg" alt="geoIcon">
+                  <div class="_geo">Belarus, Minsk</div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="about_me__container">
+            <h2>About Me</h2>
+            <div class="about_me__text">
+              <ul class="about_me__list">
+                <li class="about_me__item">
+                  I prefer a healthy lifestyle like traveling, biking, snowboard, wakeboard, surfboard and so on.
+                </li>
+                <li class="about_me__item">
+                  I can find the optimal way from difficult situation by myself in short time period.
+                </li>
+                <li class="about_me__item">
+                  I am free of the bad habits.
+                </li>
+                <li class="about_me__item">
+                  My goal is to start a career junior front-end developer.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="_container">
+
+        <header class="header">
+          <h1 class="header_name">Alexander </h1>
+          <h2 class="header_surname">Nechaenkov</h2>
+          <div class="header_spec">Front-end developer</div>
+        </header>
+
+        <main class="main_container">
+          <h2 class="skills__title _tittle">Technical Skills</h2>
+          <div class="main_block">
+            <div class="skills__container">
+              <ul class="skills__list">
+                <li class="skills__item">HTML&CSS</li>
+                <li class="skills__item">CoreJS</li>
+                <li class="skills__item">React, Redux, React-Redux</li>
+                <li class="skills__item">VS Code, Git, Git Bash, GitHub</li>
+                <li class="skills__item">Figma</li>
+              </ul>
+            </div>
+            <div class="project__container">
+              <h3 class="project__tittle">Project Examples</h3>
+              <ol class="project__list">
+                <li class="project__item">
+                  <a href="https://kettl96.github.io/Relvise/">Relvise - Finance and Consultancy Solution</a>
+                </li>
+                <li class="project__item">
+                  <a href="https://kettl96.github.io/Hello_world/">Representive page</a>
+                </li>
+                <li class="project__item">
+                  <a href="https://kettl96.github.io/Styles-Conference/">Styles-Conference</a>
+                </li>
+              </ol>
+              <div class="code__container">
+                <details>
+                  <summary>
+                    click to see some code examples
+                  </summary>
+                  <pre>
+
+function solution(numbers) { 
+  const checkIfSame = numbers.reduce((acc, item) => {
+    acc[item] = 1
+    return acc
+  }, {})
+  if (Object.keys(checkIfSame).length > 1) {
+    let largest = numbers[0]
+    let smallest = numbers[0]
+    numbers.forEach((item, index) => {
+      if (largest &lt; item) {
+        largest = item
+      }
+      if (smallest > item) {
+        smallest = item
+      }
+    })
+    numbers.forEach((item, index) => {
+      if (item === largest) {
+        numbers.splice(index, 1, (largest - smallest))
+      }
+    })
+    return solution(numbers)
+  } else {
+    const check = numbers.reduce((acc, item) => {
+      acc += item
+      return acc 
+    }, 0)
+    return check
+  }
+}                
+                </pre>
+                </details>
+              </div>
+            </div>
+          </div>
+        </main>
+        <section class="section__container">
+          <h2 class="education__title _tittle">Education</h2>
+          <div class="education__container">
+            <ul>
+              <li class="education__item">Yanka Kupala State University of Grodno (Grodno, Belarus),</li>
+              <li class="education__item">2013-2018.</li>
+              <li class="education__item">Speciality - Practical Psychology.</li>
+            </ul>
+          </div>
+          <div class="languages__container">
+            <h3 class="languages__tittle">Languages</h3>
+            <ul class="languages__list">
+              <li class="languages__item">English - B1
+              </li>
+              <li class="languages__item">Russian - Native Speaker
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+
+
+        <div class="github__container">
+          <a href="https://github.com/kettl96" class="github__link">
+            <img src="https://www.svgrepo.com/show/332084/github.svg" alt="GitHub" class="github__img">
+
+            <div class="githubname">My GitHub</div>
+          </a>
+        </div>
+        <div class="footer__year">2021</div>
+        <div class="rs__logo">
+          <a href="https://rs.school/js/" class="rs_link">
+            <img src="./rs_school_js.svg" alt="rs-school" class="rs_img">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
